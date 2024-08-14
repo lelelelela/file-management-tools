@@ -9,36 +9,36 @@ These scripts can run in a Python environment. Please ensure that you have insta
 
 ## 2. classification.py
 **功能**：通过指定关键字，移动路径下（包括子文件夹）的所有包含该关键字的文件到目标路径。  
-**Operation**: Moves all files containing the specified keyword within the path (including subdirectories) to the target path.
+**Capability**: Moves all files containing the specified keyword within the path (including subdirectories) to the target path.
 
 **操作方式**：图形化操作界面（GUI）。输入一个或多个关键字（使用回车分隔），脚本会依次将匹配的文件移动到目标路径。  
-**Operation**: Graphical User Interface (GUI). Enter one or more keywords (separated by Enter), and the script will move the matching files to the target path sequentially.
+**Operation Method**: Graphical User Interface (GUI). Enter one or more keywords (separated by Enter), and the script will move the matching files to the target path sequentially.
 
 ## 4. add_folder_name_front_file.py
 **功能**：将文件所在的文件夹名称添加到文件名前，并删除文件所在的子文件夹。  
-**Operation**: Adds the folder name to the front of the file name and deletes the subfolder containing the file.
+**Capability**: Adds the folder name to the front of the file name and deletes the subfolder containing the file.
 
 **操作方式**：图形化操作界面（GUI）。运行脚本后，文件名将改为“[子文件夹名]-[原文件名]”，并移动至父文件夹。例如，"数一数/学案/数一数相关知识.doc" 会变为 "数一数/学案-数一数相关知识.doc"。  
-**Operation**: Graphical User Interface (GUI). After running the script, the file name will change to "[Subfolder Name]-[Original File Name]" and move to the parent folder. For example, "数一数/学案/数一数相关知识.doc" will become "数一数/学案-数一数相关知识.doc".
+**Operation Method**: Graphical User Interface (GUI). After running the script, the file name will change to "[Subfolder Name]-[Original File Name]" and move to the parent folder. For example, "数一数/学案/数一数相关知识.doc" will become "数一数/学案-数一数相关知识.doc".
 
 ## 6. delete_null_path.py
 **功能**：自动删除指定路径及其子路径下的所有空文件夹。  
-**Operation**: Automatically deletes all empty folders within the specified path and its subpaths.
+**Capability**: Automatically deletes all empty folders within the specified path and its subpaths.
 
 **操作方式**：图形化操作界面（GUI）。运行脚本后，文件名将改为`[子文件夹名]-[原文件名]`，并逐级移动至父文件夹。例如，`文件/报告/年度汇报.docx` 会变为 `文件/报告-年度汇报.docx`。
 
 - **多级目录说明**：如果文件位于多级目录中，点击移动文件按钮，文件会每点击一次，向上移动一级目录并重命名。例如，如果目标路径是 `D:/File/Documents`，文件将逐级移动，直到到达 `Documents` 文件夹。
 
-**Operation**: Graphical User Interface (GUI). After running the script, the file name will change to `[Subfolder Name]-[Original File Name]` and move up one level in the directory structure each time the move button is clicked. For example, `Documents/Reports/Annual_Report.docx` will become `Documents/Reports-Annual_Report.docx`.
+**Operation Method**: Graphical User Interface (GUI). After running the script, the file name will change to `[Subfolder Name]-[Original File Name]` and move up one level in the directory structure each time the move button is clicked. For example, `Documents/Reports/Annual_Report.docx` will become `Documents/Reports-Annual_Report.docx`.
 
 - **Multilevel Directory Handling**: If the file is in a multilevel directory, each click of the move button will move the file up one level and rename it. For example, if the target path is `D:/File/Documents`, the file will keep moving up until it reaches the `Documents` folder.
 
 ## 9. print_directory_contents.py
 **功能**：打印指定目录及其子目录的内容，并显示目录结构。  
-**Operation**: Prints the contents of the specified directory and its subdirectories, showing the directory structure.
+**Capability**: Prints the contents of the specified directory and its subdirectories, showing the directory structure.
 
 **操作方式**：无图形化操作界面。通过命令行设置最大递归深度，以控制显示的层级。参数包括：  
-**Operation**: No Graphical User Interface. The maximum recursion depth can be set via the command line to control the display levels. Parameters include:
+**Operation Method**: No Graphical User Interface. The maximum recursion depth can be set via the command line to control the display levels. Parameters include:
 - `path`：要打印的目录路径。  
 - `path`: The path of the directory to print.
 - `depth`：当前递归深度。  
